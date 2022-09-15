@@ -40,7 +40,7 @@ export default class CarService {
   }
 
   public async delete(_id: string): Promise<ICar | null> {
-    const findCar = await this._car.delete(_id);
+    const findCar = await this._car.readOne(_id);
     if (!findCar) throw new ErrorHttp(ErrorTypes.EntityNotFound, 404);
     const deleted = await this._car.delete(_id);
     return deleted;
