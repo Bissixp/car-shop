@@ -9,10 +9,10 @@ const errorHandlerMiddleware = (
   _next: NextFunction,
 ) => {
   if (err instanceof ZodError) {
-    return res.status(400).json({ message: err.issues });
+    return res.status(400).json({ error: err.issues });
   }
   const { message, http } = err;
-  res.status(http || 500).json({ message });
+  res.status(http || 500).json({ error: message });
 };
 
 export default errorHandlerMiddleware;

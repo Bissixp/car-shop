@@ -7,7 +7,6 @@ export default class ErrorHttp extends Error {
 }
 
 export enum ErrorTypes {
-  EntityNotFound = 'Entity not found',
-  InvalidMongoId = 'Id must be a 24 characters hexadecimal',
-  InvalidFields = 'Some fields are required',
+  EntityNotFound = 'Object not found',
+  InvalidMongoId = 'Id must have 24 hexadecimal characters',
 }
