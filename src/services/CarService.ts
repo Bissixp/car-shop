@@ -26,13 +26,13 @@ export default class CarService {
     return findCar;
   }
 
-  public async update(_id: string, payload: unknown): Promise<ICar> {
+  public async update(_id: string, payload: ICar): Promise<ICar> {
     const parsed = CarZodSchema.safeParse(payload);
     if (!parsed.success) {
       throw parsed.error;
     }
 
-    const updated = await this._car.update(_id, parsed.data);
+    const updated = await this._car.update(_id, payload);
 
     if (!updated) throw new ErrorHttp(ErrorTypes.EntityNotFound, 404);
 
@@ -40,8 +40,9 @@ export default class CarService {
   }
 
   public async delete(_id: string): Promise<ICar | null> {
-    const findCar = await this._car.readOne(_id);
+    const findCar = await this._car.delete(_id);
     if (!findCar) throw new ErrorHttp(ErrorTypes.EntityNotFound, 404);
-    return this._car.delete(_id);
+    const deleted = await this._car.delete(_id);
+    return deleted;
   }
 }

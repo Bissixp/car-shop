@@ -5,7 +5,7 @@ import carRouter from './routes/car';
 
 const app = express();
 app.use(express.json());
-app.use(carRouter);
+app.use('/cars', carRouter);
 app.use(errorHandlerMiddleware);
 
 export default app;
