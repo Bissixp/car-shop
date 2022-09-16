@@ -33,9 +33,8 @@ export default class CarService {
     }
 
     const updated = await this._car.update(_id, payload);
-
+    
     if (!updated) throw new ErrorHttp(ErrorTypes.EntityNotFound, 404);
-
     return updated;
   }
 
