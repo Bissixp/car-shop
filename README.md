@@ -23,7 +23,7 @@ npm install
 ```
   ### 4 - Rode o servidor
 ```bash
-npm run dev
+npm start
 ```
 ### 5 - Faça requisições para o servidor aberto na porta 3001
 Recomendo utilizar a extensão Thunder Client no VS Code para fazer as requisições
@@ -44,17 +44,17 @@ cd car-shop
 ```bash
 docker-compose up -d
 ```
-### 4 - Abra o terminal do contêiner
+### 4 - Abra o terminal do container
 ```bash
 docker exec -it car_shop bash
 ```
-### 5 - Instale as dependências no terminal do contêiner
+### 5 - Instale as dependências no terminal do container
 ```bash
 npm install
 ```
 ### 6 - Rode o servidor
 ```bash
-npm run dev
+npm start
 ```
 ### 7 - Faça requisições para o servidor aberto na porta 3001
 Recomendo utilizar a extensão Thunder Client no VS Code para fazer as requisições
