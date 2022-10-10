@@ -1,7 +1,7 @@
 ##  :car: Car Shop :car: 
 Neste projeto foi desenvolvido uma API RESTful para uma loja de veículos utilizando POO (Programação Orientada a Objetos) e princípios de SOLID com um banco de dados MongoDB.
 
-Também foi implementado testes unitários.
+E também foi implementado testes unitários.
 
 ## Instalação
 <details>
@@ -69,6 +69,7 @@ Recomendo utilizar a extensão Thunder Client no VS Code para fazer as requisiç
 - Express.js
 - MongoDB
 - Mongoose.js
+- Zod
 - Mocha
 - Chai
 - Sinon
