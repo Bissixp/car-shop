@@ -68,7 +68,7 @@ Recomendo utilizar a extensão Thunder Client no VS Code para fazer as requisiç
 - Node.js
 - Express.js
 - MongoDB
-- Mongoose.js
+- Mongoose
 - Zod
 - Mocha
 - Chai
