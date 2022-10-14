@@ -5,32 +5,7 @@ E também foi implementado testes unitários.
 
 ## Instalação
 <details>
-  <summary><strong>:whale: Com Docker ou sem Docker</strong></summary><br />
-  
-  ## Sem Docker
-
-  ### 1 - Clone o repositório
-```bash
-git clone git@github.com:Bissixp/car-shop.git
-```
-  ### 2 - Mude para pasta do repositório
-```bash
-cd car-shop
-```
-  ### 3 - Instale as dependências
-```bash
-npm install
-```
-  ### 4 - Rode o servidor
-```bash
-npm start
-```
-### 5 - Faça requisições para o servidor aberto na porta 3001
-Recomendo utilizar a extensão Thunder Client no VS Code para fazer as requisições
-
----
-
-## Com docker
+  <summary><strong>:whale: Com Docker</strong></summary><br />
 
 ### 1 - Clone o repositório
 ```bash
@@ -52,11 +27,34 @@ docker exec -it car_shop bash
 ```bash
 npm install
 ```
-### 6 - Rode o servidor
+### 6 - Rode o servidor no terminal do container
 ```bash
 npm start
 ```
 ### 7 - Faça requisições para o servidor aberto na porta 3001
+Recomendo utilizar a extensão Thunder Client no VS Code para fazer as requisições
+</details>
+
+<details>
+  <summary><strong>:computer: Sem Docker</strong></summary><br />
+
+  ### 1 - Clone o repositório
+```bash
+git clone git@github.com:Bissixp/car-shop.git
+```
+  ### 2 - Mude para pasta do repositório
+```bash
+cd car-shop
+```
+  ### 3 - Instale as dependências
+```bash
+npm install
+```
+  ### 4 - Rode o servidor
+```bash
+npm start
+```
+### 5 - Faça requisições para o servidor aberto na porta 3001
 Recomendo utilizar a extensão Thunder Client no VS Code para fazer as requisições
 
  </details>
