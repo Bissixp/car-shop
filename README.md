@@ -29,7 +29,7 @@ npm install
 ```
 ### 6 - Rode o servidor no terminal do container
 ```bash
-npm start
+npm run dev
 ```
 ### 7 - Faça requisições para o servidor aberto na porta 3001
 Recomendo utilizar a extensão Thunder Client no VS Code para fazer as requisições
@@ -52,7 +52,7 @@ npm install
 ```
   ### 4 - Rode o servidor
 ```bash
-npm start
+npm run dev
 ```
 ### 5 - Faça requisições para o servidor aberto na porta 3001
 Recomendo utilizar a extensão Thunder Client no VS Code para fazer as requisições
